@@ -1,2 +1,6 @@
 
 This repo was made to demonstrate that yepnope integration in yesods scaffolding tool, yesod init, causes some non-intuitive behavior.
+
+testOnload is does not use the scaffolding tool and works intuitively. <body onload= ...> works as expected.
+
+testOnloadError is a scaffold created site with basicly the sampe Root handler and yet does not popup and alert onload.
