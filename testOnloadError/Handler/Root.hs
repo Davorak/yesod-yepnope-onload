@@ -22,13 +22,12 @@ function load()
 {
 alert("Page is loaded");
 }|]
-{-
- - This commened out section  does not function correctly.
- - The code below it seems like a good replacement for now.
- - The replacemtn does does change the order of evens on the webpage though.
+-- The commented code below it seems like a good replacement for now.
+-- The replacemtn does does change the order of evens on the webpage though.
         [whamlet|
 <body onload="load()">
     <p> Hello World!|]
--}
+{-
         [whamlet|<p> Hello World!|]
         toWidget [julius|load()|]
+-}
