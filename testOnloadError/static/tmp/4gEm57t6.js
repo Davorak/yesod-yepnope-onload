@@ -1,0 +1,1 @@
+function load(){alert("Page is loaded")};load()

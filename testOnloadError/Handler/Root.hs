@@ -10,6 +10,8 @@ import Foundation
 -- The majority of the code you will write in Yesod lives in these handler
 -- functions. You can spread them across multiple files if you are so
 -- inclined, or create a single monolithic file.
+--
+
 getRootR :: Handler RepHtml
 getRootR = do
     defaultLayout $ do
@@ -20,6 +22,13 @@ function load()
 {
 alert("Page is loaded");
 }|]
+{-
+ - This commened out section  does not function correctly.
+ - The code below it seems like a good replacement for now.
+ - The replacemtn does does change the order of evens on the webpage though.
         [whamlet|
 <body onload="load()">
     <p> Hello World!|]
+-}
+        [whamlet|<p> Hello World!|]
+        toWidget [julius|load()|]
