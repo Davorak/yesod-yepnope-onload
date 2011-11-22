@@ -1,0 +1,7 @@
+I am new to Haskell and Yesod so my questions may be naive for a while.  Feel encouraged to correct me when I am in error.
+
+I was trying out google map's api examples in yesod when I ran into a problem, the very simple straightforward examples did not work. Yepnope took scripts that would have been found in <head> and was dynamically loading them causing a <body onload="load()"> to fail since load() had not yet been defined. I have made a simple demonstration of the issue which can be found at the github repo below.
+
+How can I opt out of Yepnope on a case by case basis? Is there a better way to avoid this type of issue?
+
+https://github.com/Davorak/yesod-yepnope-onload
